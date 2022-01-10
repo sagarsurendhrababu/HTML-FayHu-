@@ -1,0 +1,76 @@
+/* header section */
+#header{height: 80px; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); position: relative; z-index: 9; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); }
+.nav>li>a{color: #fff; width: 100%;}
+
+/* banner */
+#banner{height: calc(100vh - 80px); position: relative; background: linear-gradient(180deg, #006799 0%, #00D3EF 92.71%); overflow: hidden;}
+.bannerDescrip a{margin-right: 1rem; padding-right: 2rem; }
+.bannerDescrip a:hover i{background-color:var(--c5); padding-right: 25px; color:var(--c3);}
+.bannerDescrip i{background-color: #1B8338; transition: all 200ms linear; font-size: 1rem; padding: 1rem; border-radius: 1rem 0 0 1rem; margin-right: 1rem;}
+.leaf-1,.leaf-2{position: absolute;}
+.leaf-2{top: -70px; right: 15%;}
+.leaf-1{top:58%; right: 12%;}
+
+/* Body sections */
+#body{width: 100%; height: auto;}
+.titleH3{position: relative; padding-bottom: 1rem;}
+.titleH3::before{content: ''; width: 80px; height:4px; background-color: #6AEE6D; position: absolute; bottom: 0;}
+
+/* service details */
+#serviceDetails{display: grid; grid-template-columns: repeat(5,1fr); grid-template-rows: repeat(3,1fr); grid-gap:1rem}
+#serviceDetails>li{height: 150px;  border-radius: 1rem; border: 1px solid #fff; filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2)); }
+#serviceDetails>li:nth-child(odd){background-color: #F0F3F3;}
+#serviceDetails>li:nth-child(even){background-color: #7FCAEC;}
+#serviceDetails>li>a{width: 100%; color: #062634; height: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column;}
+
+/* Our Lead */
+#Ourlead a{color: #71F66E;}
+
+/* Philosophy */
+
+#Philosophy h3{color: #007259;}
+#Philosophy i{font-size: 2rem; padding-right: 1rem; color: #CFCFCF;}
+#Philosophy p{color: #64706D;}
+
+/* We are here to Help */
+#WeHelp{background-color:#46ABD9;}
+#WeHelp ul>li{width: 25%; font-weight: 300; color: #fff; display: flex; justify-content: center; flex-direction: column; align-items: center; margin-bottom: 3%;}
+#WeHelp ul>li>img{margin-bottom:3%;}
+
+/* Insurance */
+#Insurancelogo{width: 80%; margin-top: 5%;}
+#Insurancelogo>li{width: 25%; display: flex; justify-content: center;}
+#Insurancelogo>li>img{height: 80px;}
+
+/* testimonial */
+#Testimo{background-color: #FAFAFA;}
+#Testimo li{width:33.3%; padding: 3%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+#Testimo li h5{margin-bottom: 1rem;}
+#Testimo li>img{margin-bottom: 2rem;}
+#Testimo li>p{text-align: justify;}
+
+/* map */
+.map{background:url(../img/map.jpg); object-fit: fill; height: 130px;}
+/* footer */
+#footerNav{height: auto;}
+.footerNav>li>{}
+.footerNav>li>a{padding: 2% 0; color: #fff;  margin-bottom: 2%; }
+#officeTime>li{padding:1.5% 0; border-bottom: 1px solid #71F66E; color: #fff;}
+#footerCopy{background-color: #06634E; color: #fff; font-size: 1rem; height: 100px;}
+.footerCopyNav>a{padding: 0 2rem; color: var(--c6); border-right: 1px solid var(--c6);}
+.footerCopyNav>a:last-child{border-right: none;}
+
+
+/* Mobile view port */      
+@media screen and (max-width: 598px) {
+    .titleH3{text-align: center;}
+    .nav>li{display: none;}
+    .nav>li:nth-child(4){display: block; width: 100%; text-align: center; margin-top: 1%;}
+    #serviceDetails{grid-template-columns: repeat(2,1fr);}
+    .bannerDescrip{position: absolute; bottom:0; width: 100%; padding: 2rem 1rem; background-color:rgba(255,255,255,.5);}
+    .bannerDescrip h2{color: var(--c3);}
+    .bannerDescrip h6{display: none;}
+    #Testimo li,#WeHelp ul>li{width:100%; }
+    .footerCopyNav>a{padding: 0 .5rem;}
+    #footerNav>div div{margin-bottom:5%;}
+}
